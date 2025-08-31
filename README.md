@@ -1,4 +1,4 @@
-# Anomaly Detection from Stochastic Differential Equation Realizations
+# Anomaly Detection Project (UCL)
 ---
 
 ## 📌 Overview
