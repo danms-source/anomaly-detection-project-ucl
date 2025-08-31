@@ -64,8 +64,8 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 1. **Visual Exploration**  
    - Plotted realisations of the three SDEs and explored feature distributions (scatter plots, histograms) to identify separations.  
    - Example of SDE realisations:  
-     <img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/725e59f8-70d7-474d-94ce-d2e920fe4471" />
-     
+     <img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/965da53b-5944-477a-91a9-7eef2795f7b2" />
+
    - Explored features to see which gave greatest separation between SDEs.
 
 2. **Observations**  
