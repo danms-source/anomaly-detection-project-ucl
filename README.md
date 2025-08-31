@@ -49,6 +49,41 @@ the process over time.
 <img width="772" height="493" alt="image" src="https://github.com/user-attachments/assets/4032a2b4-9ab5-4bbd-b1b9-7e65bbd5388b" />
 
 ## Week 2: Anomaly Detection For SDEs
+### Overview
+Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
+
+<img width="1360" height="556" alt="download" src="https://github.com/user-attachments/assets/7ba48e1c-def3-4b74-a79b-3783c96f4b62" />
+
+### Data
+- **Corpus:** 10,000 SDE 1 realisations  
+- **Validation:** 2,000 SDE 1, 1,000 SDE 2, 1,000 SDE 3  
+- **Test:** Same as validation, shuffled  
+
+### Approach
+
+1. **Visual Exploration**  
+   - Plotted realisations of the three SDEs and explored feature distributions (scatter plots, histograms) to identify separations.  
+   - Example of SDE realisations:  
+     ![SDE Realisations](path/to/sde_realizations.png)  
+   - Explored features to see which gave greatest separation between SDEs.
+
+2. **Observations**  
+   - **SDE 2:** highest noise → largest standard deviation of increments  
+   - **SDE 1:** intermediate standard deviation of increments
+   - **SDE 3:** filtered → smallest standard deviation of increments  
+   - Clear separation observed between **SDE 1 and SDE 2**, partial overlap between **SDE 1 and SDE 3**  
+     <img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/415f8d61-3ee9-4abf-b5bb-bec10644aaa3" />
+
+
+3. **Classification**  
+   - Manually chose thresholds based on observed standard deviations.  
+   - Applied thresholds to classify each path.
+
+4. **Evaluation**  
+   - Increasing the number of timestamps → greater accuracy  
+   - Increasing sample size → less deviation in accuracy (closer to real accuracy)  
+   - Additional feature analysis could further improve the algorithm.
+
 
 
 
