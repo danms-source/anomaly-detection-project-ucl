@@ -19,17 +19,25 @@ Generative AI technologies can be maliciously used for misinformation, making de
 
 ## Week 1: Stochastic Differential Equations (SDEs)
 
-### What are SDEs?  
-A **Stochastic Differential Equation (SDE)** is an ordinary differential equation (ODE) with an additional noise term to model stochastic fluctuations.
+### What are SDEs?
 
-The general form is:
+A **Stochastic Differential Equation (SDE)** is like an ordinary differential equation (ODE) 
+but with an additional noise term that models stochastic (random) fluctuations.
 
-<img width="433" height="75" alt="image" src="https://github.com/user-attachments/assets/ec1ab037-614d-44b0-aeb3-90773316086d" />
+The computational definition of an SDE with Gaussian noise is:
 
-where:  
+X(t + Δt) = X(t) + f(X, t) Δt + g(X, t) √(Δt) ξ
+
+where ξ is a normally distributed random variable with zero mean and unit variance. 
+The value of X(t + Δt) is computed from X(t), and this process is repeated for each time step.
+
+Formally, an SDE can be written as:
+
+dXₜ = f(Xₜ, t) dt + g(Xₜ, t) dWₜ
 
 - f(Xₜ, t) — drift term (deterministic trend)  
 - g(Xₜ, t) — diffusion term (magnitude of stochastic effects)  
-- Wₜ — Wiener process (Brownian motion)
-- dt — an infinitesimal time increment
+- Wₜ — Wiener process (Brownian motion)  
 - dWₜ — infinitesimal random increment with mean 0 and variance dt
+
+
