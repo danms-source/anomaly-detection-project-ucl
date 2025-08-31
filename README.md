@@ -138,7 +138,10 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
 
 ### Non-ML Approach
 - Compute **mean (μ)** and **std (σ)** for each feature from corpus  
-- For each clip, calculate **Z-scores** of features  
+- For each clip, calculate **Z-scores** of features using:
+  
+   Z = |x − μ| / σ
+
 - Mark features as abnormal if Z-score > threshold  
 - Clip classified as **Fake** if number of abnormal features > tuned threshold  
 - Thresholds tuned using **validation set**:
