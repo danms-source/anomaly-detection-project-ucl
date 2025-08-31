@@ -26,14 +26,14 @@ but with an additional noise term that models stochastic (random) fluctuations.
 
 The computational definition of an SDE with Gaussian noise is:
 
-X(t + Δt) = X(t) + f(X, t) Δt + g(X, t) √(Δt) ξ
+<img width="591" height="56" alt="image" src="https://github.com/user-attachments/assets/c68e00b9-a7f7-46d6-bc15-283cb222246c" />
 
 where ξ is a normally distributed random variable with zero mean and unit variance. 
 The value of X(t + Δt) is computed from X(t), and this process is repeated for each time step.
 
 Formally, an SDE can be written as:
 
-dXₜ = f(Xₜ, t) dt + g(Xₜ, t) dWₜ
+<img width="367" height="45" alt="image" src="https://github.com/user-attachments/assets/9346705f-0cdc-4072-9fd4-19e6ac199974" />
 
 - f(Xₜ, t) — drift term (deterministic trend)  
 - g(Xₜ, t) — diffusion term (magnitude of stochastic effects)  
