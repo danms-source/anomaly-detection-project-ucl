@@ -92,7 +92,42 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
 ## Week 3: Anomaly Detection For Fake Audio
 
+### Overview
+Goal: Build an algorithm to classify short audio clips as **real or fake**.
 
+### Given
+- 12 full audiobook chapter recordings (real audio)  
+- 24 fake clips from Chapter 1  
+- 5 fake clips from Chapter 4  
+- 7 fake clips from Chapter 5
+
+---
+
+### Step 1: Preprocessing & Exploration
+- Generated ** mel spectrograms** for visual inspection  
+- Analysed **waveforms, frequency distributions**, and other audio features  
+
+---
+### Step 2: Dataset Construction
+- Real audio was split into ~30-second chunks based on pauses in speech and converted into JSON metadata for each segment.
+- Created folders:
+  - **Corpus (70% real)** → 150 clips  
+  - **Validation (15% real + 50% fake)** → 46 clips  
+  - **Test (15% real + 50% fake)** → 44 clips  
+- Stratified sampling ensured balanced chapter representation in validation and test sets  
+
+---
+### Step 3: Feature Extraction
+- Extracted key audio features for each clip:  
+  - **Spectral Centroid (mean/std/range)** – indicates where the “center of mass” of the spectrum is, related to perceived brightness of sound  
+  - **Spectral Bandwidth (mean/std)** – measures the spread of frequencies around the centroid, describing timbre width  
+  - **Spectral Flatness (mean/std)** – quantifies noisiness vs tonal quality of the signal  
+  - **Spectral Rolloff (mean/std)** – frequency below which a specified percentage of energy is contained, used to separate harmonic vs noisy signals  
+  - **Zero-Crossing Rate (mean/std, per second)** – counts sign changes in waveform, capturing signal noisiness or activity  
+  - **Speech Rate** – number of detected onsets per second, approximating spoken pace  
+  - **MFCCs (means/stds)** – Mel-frequency cepstral coefficients capturing timbral characteristics and overall spectral shape  
+
+- Constructed dataframes for **corpus, validation, and test clips** and stored in a csv file for clean algorithm implementation
 
 
 
