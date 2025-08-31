@@ -23,4 +23,5 @@ What are SDEs?
 A Stochastic Differential Equation (SDE) is an ordinary differential equation (ODE) with an additional noise term to model stochastic fluctuations.
 
 The general form is:
+
 <img width="433" height="75" alt="image" src="https://github.com/user-attachments/assets/ec1ab037-614d-44b0-aeb3-90773316086d" />
