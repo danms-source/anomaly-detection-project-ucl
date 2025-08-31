@@ -23,9 +23,7 @@ By analyzing **Mel spectrogram time series** and augmenting them with statistica
 
 SDEs describe systems influenced by both deterministic trends and inherent randomness. A general SDE has the form:
 
-\[
-dX_t = \mu(X_t, t) \, dt + \sigma(X_t, t) \, dW_t
-\]
+dXₜ = μ(Xₜ, t) dt + σ(Xₜ, t) dWₜ
 
 Where:  
 
