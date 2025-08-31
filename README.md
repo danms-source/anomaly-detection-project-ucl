@@ -104,7 +104,7 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
 ---
 
 ### Step 1: Preprocessing & Exploration
-- Generated ** mel spectrograms** for visual inspection  
+- Generated **Mel spectrograms** for visual inspection  
 - Analysed **waveforms, frequency distributions**, and other audio features  
 
 ---
