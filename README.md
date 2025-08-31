@@ -1,5 +1,4 @@
 # Anomaly Detection from Stochastic Differential Equation Realizations
-
 ---
 
 ## 📌 Overview
