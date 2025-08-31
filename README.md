@@ -19,8 +19,8 @@ Generative AI technologies can be maliciously used for misinformation, making de
 
 ## Week 1: Stochastic Differential Equations (SDEs)
 
-What are SDEs?
-A Stochastic Differential Equation (SDE) is an ordinary differential equation (ODE) with an additional noise term to model stochastic fluctuations.
+# What are SDEs?  
+A **Stochastic Differential Equation (SDE)** is an ordinary differential equation (ODE) with an additional noise term to model stochastic fluctuations.
 
 The general form is:
 
