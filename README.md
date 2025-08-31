@@ -118,7 +118,7 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
 
 ---
 ### Step 3: Feature Extraction
-- Extracted key audio features for each clip:  
+- Extracted 40+ audio features for each clip such as:  
   - **Spectral Centroid (mean/std/range)** – indicates where the “center of mass” of the spectrum is, related to perceived brightness of sound  
   - **Spectral Bandwidth (mean/std)** – measures the spread of frequencies around the centroid, describing timbre width  
   - **Spectral Flatness (mean/std)** – quantifies noisiness vs tonal quality of the signal  
