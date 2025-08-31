@@ -1,8 +1,5 @@
 # Anomaly Detection from Stochastic Differential Equation Realizations
 
-**Author:** Nathan Abell  
-**Prepared for:** Nikita Brykov  
-
 ---
 
 ## 📌 Overview
