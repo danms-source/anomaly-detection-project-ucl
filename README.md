@@ -27,10 +27,10 @@ dXₜ = μ(Xₜ, t) dt + σ(Xₜ, t) dWₜ
 
 Where:  
 
-- \(X_t\) is the stochastic process  
-- \(\mu(X_t, t)\) is the drift term (deterministic trend)  
-- \(\sigma(X_t, t)\) is the diffusion term (random fluctuation)  
-- \(W_t\) is a Wiener process (standard Brownian motion)  
+- Xₜ is the stochastic process  
+- μ(Xₜ, t) is the drift term (deterministic trend)  
+- σ(Xₜ, t) is the diffusion term (random fluctuation)  
+- Wₜ is a Wiener process (standard Brownian motion)  
 
 SDE realizations are single sample paths generated numerically (e.g., using Euler–Maruyama). Each realization represents a possible evolution of the process over time.
 
