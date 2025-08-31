@@ -15,7 +15,7 @@ The proliferation of generative audio models introduces challenges in verifying 
 - Ensuring biometric security
 - Maintaining the integrity of digital media
 
-By analyzing **Mel spectrogram time series** and augmenting them with statistical and machine learning classifiers, we construct an interpretable and effective detection framework. The approach emphasizes mathematical rigor through residual analysis of SDEs and leverages data-driven insights via **SHAP-explained ML models**.
+By analyzing **Mel spectrogram time series** and augmenting them with statistical and machine learning classifiers, we construct an interpretable and effective detection framework.
 
 ---
 
