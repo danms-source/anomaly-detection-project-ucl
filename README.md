@@ -81,7 +81,9 @@ Design an algorithm that can classify sample paths (realisations) from these thr
    - Applied thresholds to classify each path.
 
 4. **Evaluation**  
-   - Increasing the number of timestamps → greater accuracy  
+   - Increasing the number of timestamps → greater accuracy 
+      <img width="1000" height="500" alt="Accuracy vs Timestamps" src="https://github.com/user-attachments/assets/2209a191-9500-4a65-88fe-fa09aada9471" />
+
    - Increasing sample size → less deviation in accuracy (closer to real accuracy)  
 
    - Additional feature analysis could further improve the algorithm.
