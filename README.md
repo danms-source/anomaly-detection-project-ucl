@@ -64,7 +64,8 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 1. **Visual Exploration**  
    - Plotted realisations of the three SDEs and explored feature distributions (scatter plots, histograms) to identify separations.  
    - Example of SDE realisations:  
-     ![SDE Realisations](path/to/sde_realizations.png)  
+     <img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/725e59f8-70d7-474d-94ce-d2e920fe4471" />
+     
    - Explored features to see which gave greatest separation between SDEs.
 
 2. **Observations**  
@@ -82,6 +83,7 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 4. **Evaluation**  
    - Increasing the number of timestamps → greater accuracy  
    - Increasing sample size → less deviation in accuracy (closer to real accuracy)  
+
    - Additional feature analysis could further improve the algorithm.
 
 
