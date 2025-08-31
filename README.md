@@ -129,5 +129,27 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
 
 - Constructed dataframes for **corpus, validation, and test clips** and stored in a csv file for clean algorithm implementation
 
+---
+
+### Step 4: Classification Algorithm
+
+### Non-ML Approach
+- Compute **mean (μ)** and **std (σ)** for each feature from corpus  
+- For each clip, calculate **Z-scores** of features  
+- Mark features as abnormal if Z-score > threshold  
+- Clip classified as **Fake** if number of abnormal features > tuned threshold  
+- Thresholds tuned using **validation set**:
+  - **Z-score threshold** → how much deviation counts as abnormal  
+  - **Feature count threshold** → how many abnormal features indicate fake  
+- More abnormal features → lower confidence clip is real
+
+### ML Approach (Isolation Forest)
+- **Isolation Forest** detects anomalies by isolating unusual patterns in high-dimensional feature space  
+- **Features scaled** using `StandardScaler`  
+- **Hyperparameters** tuned on validation set to maximize F1-score  
+- Evaluate on test set using **F1-score, classification report, and confusion matrix**  
+- Interpret model with **SHAP values**, ranking features by their contribution to correct/incorrect predictions  
+
+---
 
 
