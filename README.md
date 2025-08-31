@@ -84,7 +84,8 @@ Design an algorithm that can classify sample paths (realisations) from these thr
    - Increasing the number of timestamps → greater accuracy 
       <img width="1000" height="500" alt="Accuracy vs Timestamps" src="https://github.com/user-attachments/assets/2209a191-9500-4a65-88fe-fa09aada9471" />
 
-   - Increasing sample size → less deviation in accuracy (closer to real accuracy)  
+   - Increasing sample size → tends to the real accuracy
+<img width="1000" height="600" alt="Sample Size vs Accuracy" src="https://github.com/user-attachments/assets/52f12f26-f78d-4ac7-b4c1-1fc705de7a20" />
 
    - Additional feature analysis could further improve the algorithm.
 
