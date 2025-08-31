@@ -48,6 +48,8 @@ the process over time.
 
 <img width="772" height="493" alt="image" src="https://github.com/user-attachments/assets/4032a2b4-9ab5-4bbd-b1b9-7e65bbd5388b" />
 
+---
+
 ## Week 2: Anomaly Detection For SDEs
 ### Overview
 Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
@@ -89,6 +91,7 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
    - Additional feature analysis could further improve the algorithm.
 
+---
 
 ## Week 3: Anomaly Detection For Fake Audio
 
