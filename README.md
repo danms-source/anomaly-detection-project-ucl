@@ -15,8 +15,6 @@ The proliferation of generative audio models introduces challenges in verifying 
 - Ensuring biometric security
 - Maintaining the integrity of digital media
 
-Traditional audio classification techniques rely heavily on spectral descriptors, which may overlook subtle temporal anomalies present in generated audio. This project introduces a hybrid approach that combines **SDE-based modeling** with **spectral feature extraction** to detect anomalies indicative of fake audio.
-
 By analyzing **Mel spectrogram time series** and augmenting them with statistical and machine learning classifiers, we construct an interpretable and effective detection framework. The approach emphasizes mathematical rigor through residual analysis of SDEs and leverages data-driven insights via **SHAP-explained ML models**.
 
 ---
