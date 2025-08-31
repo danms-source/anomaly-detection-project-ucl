@@ -25,3 +25,11 @@ A **Stochastic Differential Equation (SDE)** is an ordinary differential equatio
 The general form is:
 
 <img width="433" height="75" alt="image" src="https://github.com/user-attachments/assets/ec1ab037-614d-44b0-aeb3-90773316086d" />
+
+where:  
+
+- f(Xₜ, t) — drift term (deterministic trend)  
+- g(Xₜ, t) — diffusion term (magnitude of stochastic effects)  
+- Wₜ — Wiener process (Brownian motion)
+- dt — an infinitesimal time increment
+- dWₜ — infinitesimal random increment with mean 0 and variance dt
