@@ -90,6 +90,9 @@ Design an algorithm that can classify sample paths (realisations) from these thr
    - Additional feature analysis could further improve the algorithm.
 
 
+## Week 3: Anomaly Detection For Fake Audio
+
+
 
 
 
