@@ -150,7 +150,8 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
 - More abnormal features → lower confidence clip is real
 
 ### ML Approach (Isolation Forest)
-- **Isolation Forest** detects anomalies by isolating unusual patterns in high-dimensional feature space  
+- **Isolation Forest** identifies anomalies (fake clips) by isolating points that differ from the majority of the data in feature space  
+- Works by recursively partitioning the data; points that are easier to isolate are more likely to be anomalies
 - **Features scaled** using `StandardScaler`  
 - **Hyperparameters** tuned on validation set to maximize F1-score  
 - Evaluate on test set using **F1-score, classification report, and confusion matrix**  
