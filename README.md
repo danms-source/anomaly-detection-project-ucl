@@ -44,20 +44,11 @@ SDE realizations are single sample paths generated numerically (e.g., using Eule
 - Captures spectral and temporal dynamics  
 - Statistical features extracted per Mel band (e.g., range, smoothness, increment statistics)  
 
-### SDE Fitting
-
-- Each Mel band’s time series modeled with an SDE  
-- Drift and noise residuals estimated for anomaly detection  
-
 ### Global Spectral Features
 
 - MFCCs  
 - Spectral centroid, bandwidth, flatness, roll-off  
 - Zero-crossing rate  
-
-### Feature Representation
-
-- Combines deterministic trends with stochastic variations for anomaly detection  
 
 ---
 
