@@ -79,7 +79,7 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
 
 3. **Classification**  
-   - Manually chose thresholds based on observed standard deviations.  
+   - Manually chose thresholds based on observed standard deviation of increments.  
    - Applied thresholds to classify each path.
 
 4. **Evaluation**  
