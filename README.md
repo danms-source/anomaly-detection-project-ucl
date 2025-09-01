@@ -110,7 +110,9 @@ Given
 
 ### Step 1: Preprocessing & Exploration
 - Generated **Mel spectrograms** for visual inspection  
-- Analysed **waveforms, frequency distributions**, and other audio features  
+- Analysed **waveforms, frequency distributions**, and other audio features
+  
+   <img width="1442" height="842" alt="Figure_1" src="https://github.com/user-attachments/assets/7d896758-8f4a-4bfe-bbd8-048cce4d84a4" />
 
 ---
 ### Step 2: Dataset Construction
