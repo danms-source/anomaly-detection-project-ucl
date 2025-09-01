@@ -130,6 +130,7 @@ Given
 ⚠️ Note: There are significantly fewer fake audio clips than real audio clips. This was intentionally set as it reflects real-world conditions where fake data is much less common than real data.
 
 [Back to Top](#-table-of-contents)
+
 ---
 
 ### Step 1: Visual Exploration
