@@ -104,7 +104,7 @@ Given
 - 5 fake clips from Chapter 4  
 - 7 fake clips from Chapter 5
 
-⚠️ Note: 
+⚠️ Note: There are significantly fewer fake audio clips than real audio clips. This was intentionally set as it reflects real-world conditions where fake data is much less common than real data.
 
 ---
 
