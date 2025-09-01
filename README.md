@@ -26,7 +26,7 @@ Generative AI technologies can be maliciously used for misinformation, making de
 
 ## 📅 Project Timeline
 
-| Week | Activity |
+| Stage | Activity |
 |------|----------|
 | 1    | Stochastic Differential Equations (SDEs) |
 | 2    | Anomaly Detection for SDEs |
@@ -36,7 +36,7 @@ Generative AI technologies can be maliciously used for misinformation, making de
 
 ---
 
-## 📈 Week 1: Stochastic Differential Equations (SDEs)
+## 📈 Activity 1: Stochastic Differential Equations (SDEs)
 
 ### What are SDEs?
 
@@ -71,7 +71,7 @@ the process over time.
 
 ---
 
-## 🔍 Week 2: Anomaly Detection For SDEs
+## 🔍 Activity 2: Anomaly Detection For SDEs
 ### Overview
 Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
 
@@ -116,7 +116,7 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
 ---
 
-## 🎧 Week 3: Anomaly Detection For Fake Audio
+## 🎧 Activity 3: Anomaly Detection For Fake Audio
 
 ### Overview
 Goal: Build an algorithm to classify short audio clips as **real or fake**.
