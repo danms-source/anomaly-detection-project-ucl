@@ -18,7 +18,7 @@
 ---
 ## 📌 Overview
 
-Generative AI technologies can be maliciously used for misinformation, making detection tools crucial to keep up with the rapid evolution of synthetic content. This project frames the detection of fake audio as an **anomaly detection problem**. By leveraging **Stochastic Differential Equation (SDE) modeling** and **interpretable machine learning**, the goal is to develop a robust pipeline for identifying synthetic audio in time series data.
+Generative AI technologies can be maliciously used for misinformation, making detection tools crucial to keep up with the rapid evolution of synthetic content. This project treats fake audio detection as an **anomaly detection problem**, combining statistical analysis and interpretable machine learning to build a robust pipeline capable of identifying synthetic audio in time series data.
 
 [Back to Top](#-table-of-contents)
 
