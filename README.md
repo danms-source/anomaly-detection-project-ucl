@@ -255,25 +255,25 @@ Isolation Forest is an **unsupervised anomaly detection machine learning algorit
 
 ---
 
-🚀 Applications
+🚀 **Applications**
 
 The techniques and insights from this project can be applied across various domains:
 
-Finance: Fraud detection, identifying anomalous trading patterns, or detecting synthetic market data.
+💰 **Finance:** Fraud detection, identifying anomalous trading patterns, or detecting synthetic market data.
 
-Healthcare: Detecting anomalies in medical signals like ECG, EEG, or imaging data for early diagnosis.
+🩺 **Healthcare:** Detecting anomalies in medical signals like ECG, EEG, or imaging data for early diagnosis.
 
-Cybersecurity: Identifying malicious or synthetic network traffic, phishing audio, or deepfake attacks.
+🛡️ **Cybersecurity:** Identifying malicious or synthetic network traffic, phishing audio, or deepfake attacks.
 
-Manufacturing and IoT: Predictive maintenance by detecting abnormal sensor readings in machinery or IoT devices.
+🏭 **Manufacturing & IoT:** Predictive maintenance by detecting abnormal sensor readings in machinery or IoT devices.
 
-Aerospace and Transportation: Monitoring engine or system performance for anomalies to prevent failures.
+✈️ **Aerospace & Transportation:** Monitoring engine or system performance for anomalies to prevent failures.
 
-Audio, Speech, and Multimedia: Detecting deepfake audio, voice cloning, or tampered media content.
+🎧 **Audio, Speech & Multimedia:** Detecting deepfake audio, voice cloning, or tampered media content.
 
-Social Media: Identifying synthetic posts, audio, or videos to combat misinformation.
+📱 **Social Media:** Identifying synthetic posts, audio, or videos to combat misinformation.
 
-Environment: Monitoring sensor networks for anomalous environmental readings or climate data patterns.
+🌍 **Environment:** Monitoring sensor networks for anomalous environmental readings or climate data patterns.
 
 [Back to Top](#-table-of-contents)
 
