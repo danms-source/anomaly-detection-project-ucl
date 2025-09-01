@@ -1,9 +1,26 @@
 # Anomaly Detection Project (UCL)
 ---
 
+## 📑 Table of Contents
+
+- [Overview](#-overview)  
+- [Project Timeline](#-project-timeline)  
+- [Week 1: Stochastic Differential Equations (SDEs)](#-week-1-stochastic-differential-equations-sdes)  
+- [Week 2: Anomaly Detection For SDEs](#-week-2-anomaly-detection-for-sdes)  
+- [Week 3: Anomaly Detection For Fake Audio](#-week-3-anomaly-detection-for-fake-audio)  
+  - [Step 1: Visual Exploration](#step-1-visual-exploration)  
+  - [Step 2: Dataset Construction](#step-2-dataset-construction)  
+  - [Step 3: Feature Extraction](#step-3-feature-extraction)  
+  - [Step 4: Classification Algorithm](#step-4-classification-algorithm)  
+  - [Step 5: Performance Evaluation](#step-5-performance-evaluation)  
+- [Applications](#-applications)  
+
+---
 ## 📌 Overview
 
 Generative AI technologies can be maliciously used for misinformation, making detection tools crucial to keep up with the rapid evolution of synthetic content. This project frames the detection of fake audio as an **anomaly detection problem**. By leveraging **Stochastic Differential Equation (SDE) modeling** and **interpretable machine learning**, the goal is to develop a robust pipeline for identifying synthetic audio in time series data.
+
+[Back to Top](#-table-of-contents)
 
 ---
 
@@ -14,6 +31,8 @@ Generative AI technologies can be maliciously used for misinformation, making de
 | 1    | Stochastic Differential Equations (SDEs) |
 | 2    | Anomaly Detection for SDEs |
 | 3    | Detecting Fake Audios & Presentation |
+
+[Back to Top](#-table-of-contents)
 
 ---
 
@@ -47,6 +66,8 @@ typically using methods like **Euler–Maruyama**. Each realisation reflects a p
 the process over time.
 
 <img width="772" height="493" alt="image" src="https://github.com/user-attachments/assets/4032a2b4-9ab5-4bbd-b1b9-7e65bbd5388b" />
+
+[Back to Top](#-table-of-contents)
 
 ---
 
@@ -91,6 +112,8 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
    - Additional feature analysis could further improve the algorithm.
 
+[Back to Top](#-table-of-contents)
+
 ---
 
 ## 🎧 Week 3: Anomaly Detection For Fake Audio
@@ -106,6 +129,7 @@ Given
 
 ⚠️ Note: There are significantly fewer fake audio clips than real audio clips. This was intentionally set as it reflects real-world conditions where fake data is much less common than real data.
 
+[Back to Top](#-table-of-contents)
 ---
 
 ### Step 1: Visual Exploration
@@ -114,6 +138,8 @@ Given
   
    <img width="800" alt="Figure_1" src="https://github.com/user-attachments/assets/7d896758-8f4a-4bfe-bbd8-048cce4d84a4" />
 
+[Back to Top](#-table-of-contents)
+
 ---
 ### Step 2: Dataset Construction
 - Real audio was split into ~30-second chunks based on pauses in speech and converted into JSON metadata for each segment which is stored in `anthem_transcriptions.json`.
@@ -121,7 +147,9 @@ Given
   - **Corpus (70% real)** → 150 clips  
   - **Validation (15% real + 50% fake)** → 46 clips  
   - **Test (15% real + 50% fake)** → 44 clips  
-- Stratified sampling ensured balanced chapter representation in validation and test sets  
+- Stratified sampling ensured balanced chapter representation in validation and test sets
+
+[Back to Top](#-table-of-contents)
 
 ---
 ### Step 3: Feature Extraction
@@ -135,6 +163,8 @@ Given
   - **MFCCs (means/stds)** – Mel-frequency cepstral coefficients capturing timbral characteristics and overall spectral shape  
 
 - Constructed dataframes for **corpus, validation, and test clips** and stored in a `audio_features_dataset.csv` csv file for clean algorithm implementation
+
+[Back to Top](#-table-of-contents)
 
 ---
 
@@ -159,6 +189,7 @@ Given
 <img src="https://github.com/user-attachments/assets/8111e093-a861-4640-bb79-226a6cb8ee94" alt="F1-Based Tuning Heatmap" width="800" />
 
 <img src="https://github.com/user-attachments/assets/e2c40c18-11c3-4ba5-9651-2d40c19ce642" alt="PDF Distributions" width="800" />
+
 
 ---
 
@@ -190,15 +221,61 @@ Isolation Forest is an **unsupervised anomaly detection machine learning algorit
    - `max_samples`: fraction of samples to draw for each tree
    - `max_features`: fraction of features to draw for each tree
 - The model with the highest F1-score on the validation set is selected as `best_model` to be used on the test set.
-  
+
+[Back to Top](#-table-of-contents)
+
 ---
 
 ### Step 5: Performance Evaluation
 
 ---
-
 ### Non-ML Approach
 
+- Model Evaluation: Predictions are assessed using accuracy, classification metrics, and a confusion matrix.
+   <img width="640" height="480" alt="Confusion Matrix" src="https://github.com/user-attachments/assets/30b52943-cfea-4db7-84a0-07a9e7bd1f13" />
+   
+- Feature Importance Analysis: Feature importance is plotted which ranks the features that are more frequently abnormal in fake audio compared to real audio (i.e. which features best separate fake audio from real audio)
+   <img width="800" height="800" alt="Feature Importance (Non-ML)" src="https://github.com/user-attachments/assets/5683b589-1471-4c68-b0e9-ed3c557dc206" />
+
+- Insights for Improvement: Removing consistently negative or irrelevant features may help reduce error and improve overall model performance. Other more advanced audio features could've been extracted that could help seperate real and fake audio even better.
+---
+### ML Approach
+
+- Model Evaluation: Model performance is evaluated on the test set using accuracy, classification metrics and a confusion matrix:
+<img width="600" height="400" alt="Isolation Forest Confusion Matrix" src="https://github.com/user-attachments/assets/474474ef-3446-4815-8a7a-fb698c7beec7" />
+
+- Feature Importance Analysis: SHAP values are used to quantify each feature’s contribution to correct or incorrect predictions. Features with positive contributions indicate strong separation between real and fake audio, while negative contributions indicate misleading or less informative features. As seen below, there are common features that performed well (or worse) between the ML and Non-ML algorithms.
+   <img width="800" alt="Feature Importance (ML)" src="https://github.com/user-attachments/assets/0ba8c755-84a9-46e4-97ad-b0f7fef2ae44" />
+
+- Insights for Improvement: Similarly to the Non-ML approach, removing consistently negative or irrelevant features may reduce error and improve model performance. Other more advanced audio features could've been extracted that could help seperate real and fake audio even better.
 
 
+[Back to Top](#-table-of-contents)
 
+---
+
+🚀 Applications
+
+The techniques and insights from this project can be applied across various domains:
+
+Finance: Fraud detection, identifying anomalous trading patterns, or detecting synthetic market data.
+
+Healthcare: Detecting anomalies in medical signals like ECG, EEG, or imaging data for early diagnosis.
+
+Cybersecurity: Identifying malicious or synthetic network traffic, phishing audio, or deepfake attacks.
+
+Manufacturing and IoT: Predictive maintenance by detecting abnormal sensor readings in machinery or IoT devices.
+
+Aerospace and Transportation: Monitoring engine or system performance for anomalies to prevent failures.
+
+Audio, Speech, and Multimedia: Detecting deepfake audio, voice cloning, or tampered media content.
+
+Social Media: Identifying synthetic posts, audio, or videos to combat misinformation.
+
+Environment: Monitoring sensor networks for anomalous environmental readings or climate data patterns.
+
+[Back to Top](#-table-of-contents)
+
+---
+
+End of Project
