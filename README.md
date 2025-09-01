@@ -5,9 +5,9 @@
 
 - [Overview](#-overview)  
 - [Project Timeline](#-project-timeline)  
-- [Week 1: Stochastic Differential Equations (SDEs)](#-week-1-stochastic-differential-equations-sdes)  
-- [Week 2: Anomaly Detection For SDEs](#-week-2-anomaly-detection-for-sdes)  
-- [Week 3: Anomaly Detection For Fake Audio](#-week-3-anomaly-detection-for-fake-audio)  
+- [Activity 1: Stochastic Differential Equations (SDEs)](#-activity-1-stochastic-differential-equations-sdes)  
+- [Activity 2: Anomaly Detection For SDEs](#-activity-2-anomaly-detection-for-sdes)  
+- [Activity 3: Anomaly Detection For Fake Audio](#-activity-3-anomaly-detection-for-fake-audio)  
   - [Step 1: Visual Exploration](#step-1-visual-exploration)  
   - [Step 2: Dataset Construction](#step-2-dataset-construction)  
   - [Step 3: Feature Extraction](#step-3-feature-extraction)  
