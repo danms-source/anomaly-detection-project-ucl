@@ -255,7 +255,7 @@ Isolation Forest is an **unsupervised anomaly detection machine learning algorit
 
 ---
 
-🚀 **Applications**
+🚀 Applications
 
 The techniques and insights from this project can be applied across various domains:
 
