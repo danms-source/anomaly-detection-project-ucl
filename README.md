@@ -154,13 +154,34 @@ Given
 - More abnormal features → lower confidence clip is real
 
 ### ML Approach (Isolation Forest)
-- **Isolation Forest** identifies anomalies (fake clips) by isolating points that differ from the majority of the data in feature space  
-- Works by recursively partitioning the data; points that are easier to isolate are more likely to be anomalies
-- **Features scaled** using `StandardScaler`  
-- **Hyperparameters** tuned on validation set to maximize F1-score  
-- Evaluate on test set using **F1-score, classification report, and confusion matrix**  
-- Interpret model with **SHAP values**, ranking features by their contribution to correct/incorrect predictions  
 
+Isolation Forest is an **unsupervised anomaly detection machine learning algorithm**.
+- It is an **ensemble method**, like a Random Forest, meaning that it combines the results of multiple trees to compute a final anomaly score.
+- Unlike other methods that define what’s “normal” first, Isolation Forest directly isolates points that are different from the rest.
+
+### How It Works
+1. **Randomly select a feature** (dimension) and a value within its range.  
+2. **Split the data** along that value, creating two subgroups.  
+3. **Recursively repeat** this process to build a tree.  
+4. Each **leaf node** eventually contains a single data point.  
+5. **Outliers (anomalies)** are points that get isolated **quickly** in the tree (at a smaller depth).  
+6. Multiple trees are combined into a **forest**, and the final anomaly score for a point is the **average depth across all trees**.
+
+### Intuition
+
+- Normal points are **grouped together** and require more splits to isolate.  
+- Anomalies are **few and different**, so they are **isolated faster**.
+
+### Implementation
+- **Features scaled** using `StandardScaler` to ensure that all features contribute equally to the distance computations in the algorithm.
+- The Isolation Forest is trained on the scaled training set from the corpus. This allows the model to learn the structure of 'normal' data
+- Hyperparameters are tuned on the validation set to maximize the F1-score. The hyperparameters considered include:
+   - `contamination`: expected proportion of anomalies in the data
+   - `n_estimators`: number of trees in the forest
+   - `max_samples`: fraction of samples to draw for each tree
+   - `max_features`: fraction of features to draw for each tree
+- The model with the highest F1-score on the validation set is selected as `best_model` to be used on the test set.
+  
 ---
 
 
