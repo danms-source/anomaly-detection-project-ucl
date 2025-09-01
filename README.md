@@ -13,7 +13,7 @@
   - [Step 3: Feature Extraction](#step-3-feature-extraction)  
   - [Step 4: Classification Algorithm](#step-4-classification-algorithm)  
   - [Step 5: Performance Evaluation](#step-5-performance-evaluation)  
-- [Applications](#-applications)  
+- [Applications](#-applications)
 
 ---
 ## 📌 Overview
