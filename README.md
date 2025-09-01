@@ -140,6 +140,8 @@ Given
 
 ### Step 4: Classification Algorithm
 
+--- 
+
 ### Non-ML Approach
 - Compute **mean (μ)** and **std (σ)** for each feature from corpus  
 - For each clip, calculate **Z-scores** of features using:
@@ -152,6 +154,7 @@ Given
   - **Z-score threshold** → how much deviation counts as abnormal  
   - **Feature count threshold** → how many abnormal features indicate fake  
 - More abnormal features → lower confidence clip is real
+---
 
 ### ML Approach (Isolation Forest)
 
