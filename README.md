@@ -116,7 +116,7 @@ Given
 
 ---
 ### Step 2: Dataset Construction
-- Real audio was split into ~30-second chunks based on pauses in speech and converted into JSON metadata for each segment.
+- Real audio was split into ~30-second chunks based on pauses in speech and converted into JSON metadata for each segment which is stored in `anthem_transcriptions.json`.
 - Created folders:
   - **Corpus (70% real)** → 150 clips  
   - **Validation (15% real + 50% fake)** → 46 clips  
@@ -134,7 +134,7 @@ Given
   - **Speech Rate** – number of detected onsets per second, approximating spoken pace  
   - **MFCCs (means/stds)** – Mel-frequency cepstral coefficients capturing timbral characteristics and overall spectral shape  
 
-- Constructed dataframes for **corpus, validation, and test clips** and stored in a csv file for clean algorithm implementation
+- Constructed dataframes for **corpus, validation, and test clips** and stored in a `audio_features_dataset.csv` csv file for clean algorithm implementation
 
 ---
 
