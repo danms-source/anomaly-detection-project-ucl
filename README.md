@@ -155,9 +155,10 @@ Given
   - **Feature count threshold** → how many abnormal features indicate fake  
 - More abnormal features → lower confidence clip is real
 
-<img width="600" height="300" alt="Dist of Abnormal Feature Counts" src="https://github.com/user-attachments/assets/809022b5-b416-4a99-b846-a2bb8eded039" />
-<img width="1920" height="1015" alt="F1-Based Tuning Heatmap" src="https://github.com/user-attachments/assets/8111e093-a861-4640-bb79-226a6cb8ee94" />
-<img width="1200" height="600" alt="PDF Distributions" src="https://github.com/user-attachments/assets/e2c40c18-11c3-4ba5-9651-2d40c19ce642" />
+<img width="800" alt="Dist of Abnormal Feature Counts" src="https://github.com/user-attachments/assets/809022b5-b416-4a99-b846-a2bb8eded039" />
+<img src="https://github.com/user-attachments/assets/8111e093-a861-4640-bb79-226a6cb8ee94" alt="F1-Based Tuning Heatmap" width="800" />
+
+<img src="https://github.com/user-attachments/assets/e2c40c18-11c3-4ba5-9651-2d40c19ce642" alt="PDF Distributions" width="800" />
 
 ---
 
