@@ -243,7 +243,7 @@ Isolation Forest is an **unsupervised anomaly detection machine learning algorit
 ### ML Approach
 
 - Model Evaluation: Model performance is evaluated on the test set using accuracy, classification metrics and a confusion matrix:
-<img width="600" height="400" alt="Isolation Forest Confusion Matrix" src="https://github.com/user-attachments/assets/474474ef-3446-4815-8a7a-fb698c7beec7" />
+  <img width="600" height="400" alt="Isolation Forest Confusion Matrix" src="https://github.com/user-attachments/assets/474474ef-3446-4815-8a7a-fb698c7beec7" />
 
 - Feature Importance Analysis: SHAP values are used to quantify each feature’s contribution to correct or incorrect predictions. Features with positive contributions indicate strong separation between real and fake audio, while negative contributions indicate misleading or less informative features. As seen below, there are common features that performed well (or worse) between the ML and Non-ML algorithms.
    <img width="800" alt="Feature Importance (ML)" src="https://github.com/user-attachments/assets/0ba8c755-84a9-46e4-97ad-b0f7fef2ae44" />
