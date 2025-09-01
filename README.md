@@ -108,7 +108,7 @@ Given
 
 ---
 
-### Step 1: Preprocessing & Exploration
+### Step 1: Visual Exploration
 - Generated **Mel spectrograms** for visual inspection  
 - Analysed **waveforms, frequency distributions**, and other audio features
   
