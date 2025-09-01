@@ -73,7 +73,7 @@ the process over time.
 
 ## 🔍 Activity 2: Anomaly Detection For SDEs
 ### Overview
-Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
+Goal: Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
 
 <img width="800" alt="download" src="https://github.com/user-attachments/assets/7ba48e1c-def3-4b74-a79b-3783c96f4b62" />
 
