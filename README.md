@@ -142,7 +142,7 @@ Goal: Build an algorithm to classify short audio clips as **real or fake**.
   
    <img width="168" height="62" alt="image" src="https://github.com/user-attachments/assets/62c8638d-edfb-4151-b2b6-1ec15447a3e0" />
    
-- Mark features as abnormal if Z-score > threshold  
+- Mark features as abnormal if Z-score > tuned threshold  
 - Clip classified as **Fake** if number of abnormal features > tuned threshold  
 - Thresholds tuned using **validation set**:
   - **Z-score threshold** → how much deviation counts as abnormal  
