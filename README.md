@@ -54,7 +54,7 @@ the process over time.
 ### Overview
 Design an algorithm that can classify sample paths (realisations) from these three different SDEs.
 
-<img width="1360" height="556" alt="download" src="https://github.com/user-attachments/assets/7ba48e1c-def3-4b74-a79b-3783c96f4b62" />
+<img width="800" alt="download" src="https://github.com/user-attachments/assets/7ba48e1c-def3-4b74-a79b-3783c96f4b62" />
 
 ### Data
 - **Corpus:** 10,000 SDE 1 realisations  
@@ -66,7 +66,7 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 1. **Visual Exploration**  
    - Plotted realisations of the three SDEs and explored feature distributions (scatter plots, histograms) to identify separations.  
    - Example of SDE realisations:  
-     <img width="1000" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/965da53b-5944-477a-91a9-7eef2795f7b2" />
+     <img width="800" alt="Figure_1" src="https://github.com/user-attachments/assets/965da53b-5944-477a-91a9-7eef2795f7b2" />
 
    - Explored features to see which gave greatest separation between SDEs.
 
@@ -84,10 +84,10 @@ Design an algorithm that can classify sample paths (realisations) from these thr
 
 4. **Evaluation**  
    - Increasing the number of timestamps → greater accuracy 
-      <img width="1000" height="500" alt="Accuracy vs Timestamps" src="https://github.com/user-attachments/assets/2209a191-9500-4a65-88fe-fa09aada9471" />
+      <img width="800" alt="Accuracy vs Timestamps" src="https://github.com/user-attachments/assets/2209a191-9500-4a65-88fe-fa09aada9471" />
 
    - Increasing sample size → tends to the real accuracy
-      <img width="1000" height="600" alt="Sample Size vs Accuracy" src="https://github.com/user-attachments/assets/52f12f26-f78d-4ac7-b4c1-1fc705de7a20" />
+      <img width="800" alt="Sample Size vs Accuracy" src="https://github.com/user-attachments/assets/52f12f26-f78d-4ac7-b4c1-1fc705de7a20" />
 
    - Additional feature analysis could further improve the algorithm.
 
@@ -112,7 +112,7 @@ Given
 - Generated **Mel spectrograms** for visual inspection  
 - Analysed **waveforms, frequency distributions**, and other audio features
   
-   <img width="1442" height="842" alt="Figure_1" src="https://github.com/user-attachments/assets/7d896758-8f4a-4bfe-bbd8-048cce4d84a4" />
+   <img width="800" alt="Figure_1" src="https://github.com/user-attachments/assets/7d896758-8f4a-4bfe-bbd8-048cce4d84a4" />
 
 ---
 ### Step 2: Dataset Construction
